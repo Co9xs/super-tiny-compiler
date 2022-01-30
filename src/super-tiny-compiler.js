@@ -2,7 +2,7 @@
 
 function tokenizer(input) {
   let current = 0;
-  let tokens = [];
+  const tokens = [];
 
   while (current < input.length) {
     let char = input[current];
@@ -24,13 +24,13 @@ function tokenizer(input) {
       continue;
     }
 
-    let WHITESPACE = /\s/;
+    const WHITESPACE = /\s/;
     if (WHITESPACE.test(char)) {
       current++;
       continue;
     }
 
-    let NUMBER = /[0-9]/;
+    const NUMBER = /[0-9]/;
     if (NUMBER.test(char)) {
       let value = "";
       while (NUMBERS.test(char)) {
@@ -53,7 +53,7 @@ function tokenizer(input) {
       continue;
     }
 
-    let LETTERS = /[a-z]/;
+    const LETTERS = /[a-z]/;
     if (LETTERS.test(char)) {
       let value = "";
       while (LETTERS.test(char)) {
