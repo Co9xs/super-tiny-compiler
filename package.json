@@ -1,0 +1,8 @@
+{
+  "name": "super-tiny-compiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Co9xs/super-tiny-compiler.git",
+  "author": "Co9xs",
+  "license": "MIT"
+}

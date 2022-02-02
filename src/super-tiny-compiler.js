@@ -1,6 +1,7 @@
 "use strict";
 
-function tokenizer(input) {
+// TODO: use TypeScript
+const tokenizer = (input) => {
   let current = 0;
   const tokens = [];
 
@@ -67,4 +68,4 @@ function tokenizer(input) {
     throw new TypeError(`I dont know what this character is: ${char}`);
   }
   return tokens;
-}
+};
